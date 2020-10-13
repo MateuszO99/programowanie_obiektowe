@@ -2,7 +2,7 @@
 
 using namespace std;
 
-long long sil(int n)
+static long long sil(int n)
 //funkcja obliczajaca silinie n!
 {
 
@@ -31,5 +31,6 @@ int main()
 {
         cout << sil(5) << '\n';
         cout << newton(5, 2) << '\n';
+	cout <<"TEST SIE POWIODL!"<<endl;
 	return 0;
 }
