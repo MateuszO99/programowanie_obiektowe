@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdexcept>
 
 using namespace std;
 
@@ -20,7 +21,7 @@ long long newton(int n, int k)
 {
 	if (n or k < 0 or n < k)
 	{
-		//zglosic wyjatek
+		std::invalid_argument;
 	}
 	long long nt = sil(n) / (sil(k) * sil(n - k));
 
@@ -31,6 +32,9 @@ int main()
 {
 	cout << sil(5);
 	cout << newton(5, 2); 
+	cout << newton(1,3);
+	cout << newton(5,-2);
+	cout << newton(-5,-2);
 	cout <<"TEST SIE POWIODL!"<<endl;
 	return 0;
 }
