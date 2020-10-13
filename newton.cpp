@@ -1,5 +1,5 @@
 #include <iostream>
-
+// Tutaj pozniej ma byc moje 
 using namespace std;
 
 static long long sil(int n)
@@ -33,4 +33,5 @@ int main()
         cout << newton(5, 2) << '\n';
 	cout <<"TEST SIE POWIODL!"<<endl;
 	return 0;
+	//tutaj tez cos
 }
