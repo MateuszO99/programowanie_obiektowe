@@ -29,7 +29,7 @@ long long newton(int n, int k)
 
 int main()
 {
-	cout << sil(5);
-	cout << newton(5, 2); 
+        cout << sil(5) << '\n';
+        cout << newton(5, 2) << '\n';
 	return 0;
 }
