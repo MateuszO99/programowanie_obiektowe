@@ -1,8 +1,6 @@
 #include <iostream>
-
 // Tutaj pozniej ma byc moje 
 using namespace std;
-
 
 static long long sil(int n)
 //funkcja obliczajaca silinie n!
@@ -32,11 +30,10 @@ long long newton(int n, int k)
 int main()
 {
         cout << newton(5, 2) << '\n';
-
-
-
-
-	cout << sil(5) << '\n';
+<<<<<<< HEAD
+	cout <<"TEST SIE POWIODL!"<<endl;
+=======
+        cout << sil(5) << '\n';
         cout << newton(10,10) << '\n';
         // dziala
 >>>>>>> msz_1
