@@ -1,3 +1,3 @@
 # `Programowanie obiektowe`
-`Nauczyciele`: Łukasz Bajsarowicz, Mateusz Oryl 
-`Uczeń`: Michał Szul
+`Nauczyciele`: Łukasz Bajsarowicz(DonLuQ), Mateusz Oryl(MateuszO99) 
+`Uczeń`: Michał Szul(SonofGrabarz)
