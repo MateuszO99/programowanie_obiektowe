@@ -2,7 +2,6 @@
 #include <stdexcept>
 using namespace std;
 
-
 static long long sil(int n)
 //funkcja obliczajaca silinie n!
 {
@@ -21,7 +20,7 @@ long long newton(int n, int k)
 {
 	if (n or k < 0 or n < k)
 	{
-		std::invalid_argument;
+		throw std::invalid_argument("Bledne dane wejsciowe wymane n>k dla C(n,k) oraz n,k > 0");
 	}
 	long long nt = sil(n) / (sil(k) * sil(n - k));
 
@@ -37,5 +36,4 @@ int main()
 	cout << newton(-5, -2) << endl;
 	cout << "TEST SIE POWIODL!" << endl;
 	return 0;
-	//tutaj tez cos
 }
