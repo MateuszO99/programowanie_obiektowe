@@ -29,8 +29,8 @@ long long newton(int n, int k)
 
 int main()
 {
-        cout << sil(5) << '\n';
         cout << newton(5, 2) << '\n';
+        cout << sil(5) << '\n';
         cout << newton(10,10) << '\n';
         // dziala
 	return 0;
