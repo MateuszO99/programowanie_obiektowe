@@ -20,7 +20,7 @@ long long newton(int n, int k)
 {
 	if (n < 0 || k < 0 || n < k)
 	{
-		std::cout << "Bledne dane wejsciowe wymane n>k dla C(n,k) oraz n,k > 0" << std::endl;
+		cout << "Bledne dane wejsciowe wymane n>k dla C(n,k) oraz n,k > 0" << endl;
 		throw std::invalid_argument("Bledne dane wejsciowe wymane n>k dla C(n,k) oraz n,k > 0");
 	}
 	long long nt = sil(n) / (sil(k) * sil(n - k));
