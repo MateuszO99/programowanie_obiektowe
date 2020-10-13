@@ -18,8 +18,9 @@ static long long sil(int n)
 long long newton(int n, int k)
 //funkcja obliczajaca C(n,k) wykorzystujac funkcje sil()
 {
-	if (n or k < 0 or n < k)
+	if (n < 0 || k < 0 || n < k)
 	{
+		std::cout << "Bledne dane wejsciowe wymane n>k dla C(n,k) oraz n,k > 0" << std::endl;
 		throw std::invalid_argument("Bledne dane wejsciowe wymane n>k dla C(n,k) oraz n,k > 0");
 	}
 	long long nt = sil(n) / (sil(k) * sil(n - k));
