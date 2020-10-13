@@ -1,3 +1,4 @@
 # Programowanie obiektowe
-Project Squad:
-Lukasz Bajsarowicz
+Project Squad:  
+Nauczyciele: Lukasz Bajsarowicz, Mateusz Oryl  
+Uczeń: Michał Szul
