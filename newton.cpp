@@ -39,7 +39,6 @@ int main()
 	cout << sil(5) << '\n';
         cout << newton(10,10) << '\n';
         // dziala
->>>>>>> msz_1
 	return 0;
 	//tutaj tez cos
 }
