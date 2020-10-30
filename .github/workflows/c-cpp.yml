@@ -17,7 +17,11 @@ jobs:
       run: mkdir build && cd build && cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-Werror" ..
     - name: make
       run: cd build && make
+    - name: Display dir
+      run: pwd
     - name: Display content
       run: dir
+    - name: go to build and display
+      run: cd build && pwd && dir
     - name: Run Test
-      run: cd ./home/runner/work/programowanie_obiektowe/programowanie_obiektowe/build/runTests
+      run: ./runTests
