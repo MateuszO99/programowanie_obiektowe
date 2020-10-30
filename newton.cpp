@@ -10,8 +10,7 @@ using namespace std;
 static long double factorial(int n)
 //funkcja obliczajaca silinie n!
 {
-
-	if(n > 1)
+    if(n > 1)
         return n * factorial(n - 1);
     else
         return 1;
