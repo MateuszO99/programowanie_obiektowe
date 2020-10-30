@@ -24,4 +24,4 @@ jobs:
     - name: go to build and display
       run: cd build && pwd && dir
     - name: Run Test
-      run: /build/runTests
+      run: /home/runner/work/programowanie_obiektowe/programowanie_obiektowe/build/runTests
