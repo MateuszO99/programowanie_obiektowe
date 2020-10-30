@@ -24,4 +24,4 @@ jobs:
     - name: go to build and display
       run: cd build && pwd && dir
     - name: Run Test
-      run: ./runTests
+      run: /build/runTests
