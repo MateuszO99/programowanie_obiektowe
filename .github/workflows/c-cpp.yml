@@ -18,4 +18,4 @@ jobs:
     - name: make
       run: cd build && make
     - name: Run Test
-      run: /home/runner/work/programowanie_obiektowe/programowanie_obiektowe/build/test.cpp
+      run: ./test.cpp
