@@ -1,32 +1,29 @@
 #include <iostream>
 #include <stdexcept>
+#include <array>
+#include <iomanip>
 
 #include "newton.h"
 
 using namespace std;
 
-static long long sil(int n)
+static long double factorial(int n)
 //funkcja obliczajaca silinie n!
 {
 
-	long long silnia = 1;
-	for (int i = n; i > 1; i--)
-	{
-		silnia *= i;
-	}
-
-	return silnia;
+	if(n > 1)
+        return n * factorial(n - 1);
+    else
+        return 1;
 }
 
-long long newton(int n, int k)
+long double newton(int n, int k)
 //funkcja obliczajaca C(n,k) wykorzystujac funkcje sil()
 {
 	if (n < 0 || k < 0 || n < k)
-	{
-		cout << "Bledne dane wejsciowe wymane n>k dla C(n,k) oraz n,k > 0" << endl;
-		throw std::invalid_argument("Bledne dane wejsciowe wymane n>k dla C(n,k) oraz n,k > 0");
-	}
-	long long nt = sil(n) / (sil(k) * sil(n - k));
-
-	return nt;
+    {
+        cout << "Bledne dane wejsciowe wymane n>k dla C(n,k) oraz n,k > 0" << endl;
+        throw std::invalid_argument("Bledne dane wejsciowe wymane n>k dla C(n,k) oraz n,k > 0");
+    }
+    return factorial(n) / (factorial(k) * factorial(n - k));
 }

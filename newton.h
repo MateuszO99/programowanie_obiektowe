@@ -1,7 +1,7 @@
 #ifndef NEWTON_H
 #define NEWTON_H
 
-static long long sil(int n);
-long long newton(int n, int k);
+static long double factorial(int n);
+long double newton(int n, int k);
 
 #endif
