@@ -1,6 +1,8 @@
 #include <gtest/gtest.h>
-
+#include <iostream>
 #include "newton.h"
+
+using namespace std;
 
 TEST(NewtonTest, simple_ints)
 {
@@ -13,5 +15,9 @@ TEST(NewtonTest, simple_ints)
 int main(int argc, char* argv[])
 {
   ::testing::InitGoogleTest(&argc, argv);
+  cout << std::setprecision(20) << newton(40, 20)<<endl;
+  cout << std::setprecision(20) << newton(40, 40)<<endl;
+  cout << std::setprecision(20) << newton(40, 1)<<endl;
+  cout << std::setprecision(20) << newton(67, 33)<<endl;
   return RUN_ALL_TESTS();
 }
