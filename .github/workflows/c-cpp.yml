@@ -2,9 +2,9 @@ name: C/C++ CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ lista_9_Mateusz_Oryl ]
   pull_request:
-    branches: [ main ]
+    branches: [ lista_9_Mateusz_Oryl ]
 
 jobs:
   build:
@@ -20,4 +20,4 @@ jobs:
     - name: go to build and display
       run: cd build && pwd && dir
     - name: Run Test
-      run: /home/runner/work/programowanie_obiektowe/programowanie_obiektowe/build/runTests
+      run: /home/runner/work/programowanie_obiektowe/programowanie_obiektowe/build/test/runTests
