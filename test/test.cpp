@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include <iostream>
 
-#include "newton.h"
+#include "../zadanie/newton.h"
 
 using namespace std;
 
